@@ -11,6 +11,6 @@ try {
     await newUser.save();
      res.status(201).json("User created successfully")
 } catch (error) {
-    next(errorHandler(550,'error from the function'));
-}
+    next(error);}
+    
 };
